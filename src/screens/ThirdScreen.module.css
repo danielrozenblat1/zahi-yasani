@@ -1,0 +1,11 @@
+.title {
+    font-size: 2.5rem;
+    direction: rtl;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  
+    justify-content: center;
+    text-align: center;
+    margin: 2% auto;
+    font-family: "Assistant";
+  
+}
