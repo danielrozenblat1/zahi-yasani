@@ -5,7 +5,7 @@
 .descriptionWrapper {
     width: fit-content;
     margin: 2rem auto;
-    background: rgba(255, 255, 255, 0.12);
+ 
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-radius: 20px;
@@ -92,7 +92,7 @@
 }
 
 .quate {
-    font-family: AssistantR, sans-serif;
+    font-family: "AssistantR", sans-serif;
     font-size: 1.2rem;
     font-style: italic;
     direction: rtl;
@@ -159,7 +159,9 @@
     
     .title {
         font-size: 1.5rem;
-        margin: 1rem 0;
+        margin: 1rem auto;
+        width: 90%;
+
     }
     
     .description {
@@ -191,6 +193,8 @@
     
     .title {
         font-size: 1.6rem;
+        width: 90%;
+        margin: 1rem auto;
     }
     
     .description {

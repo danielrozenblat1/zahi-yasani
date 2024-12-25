@@ -1,6 +1,6 @@
 .faqItem {
   margin-bottom: 1rem;
-  border: 1px solid #e0e0e0;  /* Lighter, more neutral border */
+  border: 1px solid #f6d4c2;  /* Lighter, more neutral border */
   border-radius: 8px;
   overflow: hidden;
   width: 500px;
@@ -16,7 +16,7 @@
   align-items: center;
   width: 100%;
   padding: 1rem;
-  background-color: #fafafa;  /* Very light gray background */
+  background-color: #ffffff7c;  /* Very light gray background */
   border: none;
   text-decoration: none;
   color: #333333;  /* Dark gray text */
@@ -40,7 +40,7 @@
 .iconWrapper {
   width: 24px;
   flex-shrink: 0;
-  color: #666666;  /* Medium gray for icons */
+  color: #c3a08d;  /* Medium gray for icons */
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@
 .answerContainer {
   overflow: hidden;
   transition: height 0.3s ease;
-  background-color: #ffffff;  /* Pure white background */
+  background-color: #fff7f1;  /* Pure white background */
   margin: auto;
   direction: rtl;
 }

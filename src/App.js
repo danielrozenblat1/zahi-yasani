@@ -9,6 +9,7 @@ import NavBarNew from './components/NewNav/NavBarNew';
 import { useEffect, useState } from 'react';
 import Services from './components/recommends/Services';
 import SecondScreen from './screens/SecondScreen';
+import ForthScreen from './screens/ForthScreen';
 
 function App() {
 
@@ -36,7 +37,8 @@ function App() {
   };
   return <>
   <NavBarNew/>
-  <FirstScreen scrolled={scrolled}/>
+  <ForthScreen scrolled={scrolled}/>
+  <FirstScreen />
   <AboutMe/>
   <SecondScreen/>
   <Courses/>

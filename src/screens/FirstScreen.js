@@ -12,7 +12,7 @@ const FirstScreen = (props) => {
             easing: "ease-out",
             reset:false,
             viewFactor: 0.2,
-            interval: 300, // Delay between each element
+            interval: 500, // Delay between each element
             delay: 200, // Delay before the animation starts
             scale: 1, // Set scale to 1 or null
           });
@@ -23,7 +23,7 @@ const FirstScreen = (props) => {
             easing: "ease-out",
             reset:false,
             viewFactor: 0.2,
-            interval: 300, // Delay between each element
+            interval: 500, // Delay between each element
             delay: 200, // Delay before the animation starts
             scale: 1, // Set scale to 1 or null
           });
