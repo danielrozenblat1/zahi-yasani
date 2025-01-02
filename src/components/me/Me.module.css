@@ -29,6 +29,7 @@
   flex: 1;
   padding-right: 20px;
   position: relative;
+
 }
 
 .image {
@@ -129,6 +130,7 @@
   justify-content: center;
   gap: 20px;
   margin: 0 auto;
+  width:60%;
 }
 
 .workshopImage {

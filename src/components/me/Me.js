@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Me.module.css';
 import claude from "../../images/צהיי יסני תדמית.png"; // Updated image name
 import image1 from "../../images/צהיי הרצאה.png"
-import image2 from "../../images/צהיי סדנה.png"
+import image2 from "../../images/צהיי סדנאות נשים חדש.jpeg"
+import image3 from "../../images/צהיי ערב נשים.jpeg"
 import Recommends from '../recommends/Recommends';
 const AboutMe = () => {
   return (
@@ -14,7 +15,7 @@ const AboutMe = () => {
         </div>
         <div className={styles.content}>
           <h1 className={styles.title}>צהיי יסני</h1>
-          <div className={styles.subtitle}>"חלומות גדולים לא משקפים אנשים עם חלומות קטנים"</div>
+          <div className={styles.subtitle}>"חלומות גדולים לא משתפים אנשים עם חלומות קטנים"</div>
           <p className={styles.description}>
             אני בן אדם שתמיד חשב בגדול , הרגשתי שאני תמיד נמצאת במקום שאני צריכה להוכיח את עצמי ושיש בי יותר ממה שרואים ונמאס לי!
           </p>
@@ -31,6 +32,7 @@ const AboutMe = () => {
         <div className={styles.imagesContainer}>
           <img src={image1} alt="סדנה 1" className={styles.workshopImage} />
           <img src={image2} alt="סדנה 2" className={styles.workshopImage} />
+          <img src={image3} alt="סדנה 2" className={styles.workshopImage} />
         </div>
       </div>
       <Recommends/>

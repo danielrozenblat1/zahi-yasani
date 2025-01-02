@@ -33,7 +33,7 @@ const FirstScreen = (props) => {
     return (
         <div className={props.scrolled ? styles.containerP : styles.container}>
             <div className={styles.descriptionWrapper}>
-                <div className={styles.description}>מרגישים שיש בכם פוטנציאל שעדיין לא ממומש?</div>
+                <div className={styles.description}>מרגישים שאתם צריכים לעשות שינוי ולא יודעים מאיפה להתחיל?</div>
             </div>
             <div className={styles.description}>אני מכירה את התחושה הזו! לדעת שיש בכם יותר אבל משהו עוצר אתכם בכל פעם מחדש</div>
             <div className={styles.description}>ואז מגיעים משפטים כמו :</div>
