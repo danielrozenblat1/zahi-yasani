@@ -41,7 +41,7 @@
     width: fit-content;
     font-size: 1.4rem;
     padding: 1rem 2rem;
-    background: rgba(226, 202, 177, 0.2);
+    background: rgba(225, 175, 121, 0.3);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.3);

@@ -6,16 +6,17 @@
     width: fit-content;
     margin: 2rem auto;
  
-    backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-radius: 20px;
     padding: 1.5rem 3.5rem;
     direction: rtl;
+
     box-shadow: 
-        10px 10px 20px rgba(240, 224, 216, 0.35),
-        -10px -10px 20px rgba(255, 255, 255, 0.55),
-        inset 5px 5px 10px rgba(219, 219, 219, 0.45),
-        inset -5px -5px 10px rgba(214, 214, 214, 0.45);
+        3px 3px 10px rgba(120, 120, 120, 0.15),
+        -3px -3px 10px rgba(144, 144, 144, 0.15),
+        inset 8px 8px 10px rgba(200, 176, 152, 0.25),
+        inset -8px -8px 10px rgba(200, 176, 152, 0.25);
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -30,7 +31,7 @@
     height: 2px;
     background: linear-gradient(90deg, 
         transparent 0%, 
-        rgba(255, 255, 255, 0.8) 50%, 
+        rgba(187, 180, 176, 0.8) 50%, 
         transparent 100%);
     animation: shimmer 3s infinite;
 }
@@ -44,7 +45,7 @@
     height: 1px;
     background: linear-gradient(90deg, 
         transparent 0%, 
-        rgba(255, 255, 255, 0.3) 50%, 
+        rgba(110, 82, 49, 0.3)3) 50%, 
         transparent 100%);
 }
 
@@ -98,14 +99,14 @@
     direction: rtl;
     text-align: center;
     padding: 2rem 2.5rem; /* Reduced padding */
-    background: rgba(245, 241, 237, 0.15);
+    background: rgba(214, 205, 195, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     position: relative;
     width: 280px; /* Fixed width instead of fit-content */
     transform-style: preserve-3d;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(137, 101, 73, 0.2);
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -118,7 +119,7 @@
     top: -20px;
     right: 25px;
     font-size: 5rem;
-    color: rgba(52, 73, 94, 0.05);
+    color: rgba(151, 118, 76, 0.56);
     font-family: serif;
     transform: rotate(8deg);
 }
@@ -187,8 +188,9 @@
 
     
     .descriptionWrapper {
-        padding: 1.25rem;
+        padding: 1rem 0.5rem;
         margin: 1.25rem auto;
+        width:85%;
     }
     
     .title {
