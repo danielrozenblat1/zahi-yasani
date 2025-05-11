@@ -1,0 +1,538 @@
+/* Base styles */
+.container,.containerP {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    padding-top: 160px;
+}
+  .containerP{
+    padding-top: 240px;
+  }
+.explainContainer {
+    position: relative;
+    max-width: 80%;
+    z-index: 2;
+}
+  
+.imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+  
+.topLeftImage,
+.topRightImage,
+.centerImage {
+    position: absolute;
+    width: 180px;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    z-index: -1;
+}
+  
+.topLeftImage,
+.topRightImage {
+    transition: transform 0.1s ease-out;
+}
+  
+.topLeftImage {
+    top: -135px;
+    left: -60px;
+    transform: rotate(-20deg);
+    background-image: url('../images/צהיי\ תמונה\ שמאל.png');
+}
+  
+.topRightImage {
+    top: -135px;
+    right: -60px;
+    transform: rotate(20deg);
+    background-image: url('../images/צהיי\ יסני\ תמונה\ ימין.jpeg');
+}
+
+.explain {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2rem;
+    color: #281916;
+    padding: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.255);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+}
+  
+.contentWrapper {
+    padding: 2.5rem;
+    max-width: 70%;
+    background: rgba(255, 255, 255, 0.255);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    z-index: 1;
+}
+  
+.descriptionWrapper {
+    font-family: 'AssistantR', sans-serif;
+    color: #281916;
+    text-align: center;
+}
+  
+.description {
+    font-size: 1.5rem;
+    direction: rtl;
+    margin: 0.5rem 0;
+    display: block;
+}
+  
+.description:first-child {
+    position: relative;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+  
+.description:last-child {
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: relative;
+    display: inline-block;
+}
+  
+.description:last-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #d0b19a, #ffeae4, #d0b19a);
+    animation: underlineAnimation 3s infinite;
+}
+  
+@keyframes underlineAnimation {
+    0%, 100% {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+  
+.bounceArrow {
+    animation: bounce 2s infinite;
+}
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+  
+/* Media Queries */
+@media (max-width: 350px) {
+    .container {
+        padding-top: 80px;
+    }
+    .containerP{
+        padding-top: 160px;
+    }
+    .explainContainer, .contentWrapper {
+        max-width: 80%;
+    }
+    .explain {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .description {
+        font-size: 1.1rem;
+    }
+    .description:first-child {
+        font-size: 1.1rem;
+    }
+    .description:last-child {
+        font-size: 1.4rem;
+    }
+    .contentWrapper {
+        width: 70%;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 90px;
+        height: 120px;
+    }
+    .topLeftImage {
+        top: -75px;
+        left: -30px;
+    }
+    .topRightImage {
+        top: -75px;
+        right: -30px;
+    }
+    .centerImage {
+        top: -75px;
+    }
+}
+  
+@media (min-width: 350px) and (max-width: 450px) {
+    .container {
+        padding-top: 100px;
+    }
+    .containerP{
+        padding-top: 180px;
+    }
+    .explainContainer, .contentWrapper {
+        max-width: 85%;
+    }
+    .explain {
+        font-size: 1.4rem;
+    }
+    .contentWrapper {
+        width: 75%;
+        padding: 2rem;
+    }
+    .description {
+        font-size: 1.15rem;
+    }
+    .description:first-child {
+        font-size: 1.15rem;
+    }
+    .description:last-child {
+        font-size: 1.5rem;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 110px;
+        height: 147px;
+    }
+    .topLeftImage {
+        top: -85px;
+        left: -35px;
+    }
+    .topRightImage {
+        top: -85px;
+        right: -35px;
+    }
+    .centerImage {
+        top: -85px;
+    }
+}
+  
+@media (min-width: 450px) and (max-width: 550px) {
+    .container {
+        padding-top: 100px;
+    }
+    .containerP{
+        padding-top: 180px;
+    }
+    .explainContainer, .contentWrapper {
+        max-width: 80%;
+    }
+    .explain {
+        font-size: 1.6rem;
+    }
+    .description {
+        font-size: 1.2rem;
+    }
+    .description:first-child {
+        font-size: 1.2rem;
+    }
+    .description:last-child {
+        font-size: 1.5rem;
+    }
+    .contentWrapper {
+        width: 75%;
+        padding: 2rem;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 130px;
+        height: 173px;
+    }
+    .topLeftImage {
+        top: -95px;
+        left: -40px;
+    }
+    .topRightImage {
+        top: -95px;
+        right: -40px;
+    }
+    .centerImage {
+        top: -95px;
+    }
+}
+  
+@media (min-width: 550px) and (max-width: 650px) {
+    .container {
+        padding-top: 120px;
+    }
+    .containerP{
+        padding-top: 200px;
+    }
+    .explainContainer, .contentWrapper {
+        max-width: 75%;
+    }
+    .explain {
+        font-size: 1.7rem;
+    }
+    .description {
+        font-size: 1.3rem;
+    }
+    .description:first-child {
+        font-size: 1.3rem;
+    }
+    .description:last-child {
+        font-size: 1.6rem;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 150px;
+        height: 200px;
+    }
+    .topLeftImage {
+        top: -105px;
+        left: -50px;
+    }
+    .topRightImage {
+        top: -105px;
+        right: -50px;
+    }
+    .centerImage {
+        top: -105px;
+    }
+}
+  
+@media (min-width: 650px) and (max-width: 750px) {
+    .container {
+        padding-top: 120px;
+    }
+    .containerP{
+        padding-top: 200px;
+    }
+    .explainContainer {
+        max-width: 75%;
+    }
+    .contentWrapper {
+        max-width: 65%;
+    }
+    .explain {
+        font-size: 1.8rem;
+    }
+    .description {
+        font-size: 1.4rem;
+    }
+    .description:first-child {
+        font-size: 1.4rem;
+    }
+    .description:last-child {
+        font-size: 1.7rem;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 160px;
+        height: 213px;
+    }
+    .topLeftImage {
+        top: -115px;
+        left: -55px;
+    }
+    .topRightImage {
+        top: -115px;
+        right: -55px;
+    }
+    .centerImage {
+        top: -115px;
+    }
+}
+  
+@media (min-width: 750px) and (max-width: 850px) {
+    .container {
+        padding-top: 120px;
+    }
+    .containerP{
+        padding-top: 200px;
+    }
+    .explainContainer {
+        max-width: 75%;
+    }
+    .contentWrapper {
+        max-width: 65%;
+    }
+    .explain {
+        font-size: 1.9rem;
+    }
+    .description {
+        font-size: 1.45rem;
+    }
+    .description:first-child {
+        font-size: 1.45rem;
+    }
+    .description:last-child {
+        font-size: 1.8rem;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 170px;
+        height: 227px;
+    }
+    .topLeftImage {
+        top: -125px;
+        left: -58px;
+    }
+    .topRightImage {
+        top: -125px;
+        right: -58px;
+    }
+    .centerImage {
+        top: -125px;
+    }
+}
+  
+@media (min-width: 850px) and (max-width: 950px) {
+    .container {
+        padding-top: 140px;
+    }
+    .containerP{
+        padding-top: 220px;
+    }
+    .explainContainer {
+        max-width: 80%;
+    }
+    .contentWrapper {
+        max-width: 65%;
+    }
+    .explain {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1.5rem;
+    }
+    .description:first-child {
+        font-size: 1.5rem;
+    }
+    .description:last-child {
+        font-size: 1.9rem;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 175px;
+        height: 233px;
+    }
+    .topLeftImage {
+        top: -130px;
+        left: -59px;
+    }
+    .topRightImage {
+        top: -130px;
+        right: -59px;
+    }
+    .centerImage {
+        top: -130px;
+    }
+}
+  
+@media (min-width: 950px) and (max-width: 1050px) {
+    .container {
+        gap: 1.5rem;
+    }
+    .contentWrapper {
+        max-width: 65%;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 177px;
+        height: 236px;
+    }
+    .topLeftImage {
+        top: -132px;
+        left: -59px;
+    }
+    .topRightImage {
+        top: -132px;
+        right: -59px;
+    }
+    .centerImage {
+        top: -132px;
+    }
+}
+  
+@media (min-width: 1050px) and (max-width: 1150px) {
+    .container {
+        gap: 1.5rem;
+    }
+    .explainContainer {
+        max-width: 75%;
+    }
+    .contentWrapper {
+        max-width: 65%;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 178px;
+        height: 237px;
+    }
+    .topLeftImage {
+        top: -133px;
+        left: -60px;
+    }
+    .topRightImage {
+        top: -133px;
+        right: -60px;
+    }
+    .centerImage {
+        top: -133px;
+    }
+}
+  
+@media (min-width: 1150px) and (max-width: 1250px) {
+    .container {
+        gap: 1.5rem;
+    }
+    .explainContainer {
+        max-width: 70%;
+    }
+    .contentWrapper {
+        max-width: 65%;
+    }
+    .topLeftImage,
+    .topRightImage,
+    .centerImage {
+        width: 180px;
+        height: 240px;
+    }
+    .topLeftImage {
+        top: -135px;
+        left: -60px;
+    }
+    .topRightImage {
+        top: -135px;
+        right: -60px;
+    }
+    .centerImage {
+        top: -135px;
+    }
+}

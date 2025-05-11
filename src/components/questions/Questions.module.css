@@ -1,0 +1,111 @@
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid #f6d4c2;  /* Lighter, more neutral border */
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px;
+  margin: 15px auto;
+  direction: rtl;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Subtler shadow */
+  text-decoration: none;
+}
+
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff7c;  /* Very light gray background */
+  border: none;
+  text-decoration: none;
+  color: #333333;  /* Dark gray text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.questionButton:hover {
+  background-color: #f5f5f5;  /* Slightly darker on hover */
+}
+
+.questionText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333333;  /* Dark gray text */
+  direction: rtl;
+  flex-grow: 1;
+}
+
+.iconWrapper {
+  width: 24px;
+  flex-shrink: 0;
+  color: #b69584;  /* Medium gray for icons */
+  text-decoration: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.answerContainer {
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background-color: #fff7f1;  /* Pure white background */
+  margin: auto;
+  direction: rtl;
+}
+
+.answerText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.05rem;
+  padding: 1rem;
+  color: #333333;  /* Dark gray text */
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+/* Accent for links or important text within answers */
+.answerText a, .answerText strong {
+  color: #666666;  /* Medium gray for emphasis */
+}
+
+/* Responsive styles remain unchanged */
+@media (max-width: 350px) {
+  .faqItem {
+    width: 280px;
+  }
+  .questionText {
+    font-size: 1rem;
+  }
+  .answerText {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .faqItem {
+    width: 320px;
+  }
+  .questionText {
+    font-size: 1.05rem;
+  }
+  .answerText {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .faqItem {
+    width: 400px;
+  }
+  .questionText {
+    font-size: 1.1rem;
+  }
+  .answerText {
+    font-size: 1rem; 
+  }
+}
