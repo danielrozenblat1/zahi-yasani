@@ -6,18 +6,25 @@
     align-items: center;
     gap: 1rem;
     position: relative;
-    overflow: hidden;
-    padding-top: 160px;
+    overflow-x: hidden;
+
+
 }
   .containerP{
-    padding-top: 240px;
+    padding-top: 80px;
   }
 .explainContainer {
     position: relative;
     max-width: 80%;
     z-index: 2;
 }
-  
+  .image{
+    width:30%;
+    justify-content: center;
+    display: flex;
+    object-fit: contain;
+    margin:2% auto;
+  }
 .imageContainer {
     position: absolute;
     top: 0;
@@ -147,10 +154,10 @@
 /* Media Queries */
 @media (max-width: 350px) {
     .container {
-        padding-top: 80px;
+        padding-top: 0;
     }
     .containerP{
-        padding-top: 160px;
+        padding-top: 80px;
     }
     .explainContainer, .contentWrapper {
         max-width: 80%;
@@ -181,6 +188,13 @@
         top: -75px;
         left: -30px;
     }
+    ֿ .image{
+        width:90%;
+        justify-content: center;
+        display: flex;
+        object-fit: contain;
+        margin:2% auto;
+      }
     .topRightImage {
         top: -75px;
         right: -30px;
@@ -192,10 +206,10 @@
   
 @media (min-width: 350px) and (max-width: 450px) {
     .container {
-        padding-top: 100px;
+        padding-top: 0;
     }
     .containerP{
-        padding-top: 180px;
+        padding-top: 80px;
     }
     .explainContainer, .contentWrapper {
         max-width: 85%;
@@ -207,6 +221,13 @@
         width: 75%;
         padding: 2rem;
     }
+    .image{
+        width:70%;
+        justify-content: center;
+        display: flex;
+        object-fit: contain;
+        margin:2% auto;
+      }
     .description {
         font-size: 1.15rem;
     }

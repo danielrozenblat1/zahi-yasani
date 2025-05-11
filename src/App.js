@@ -36,6 +36,7 @@ function App() {
     }
   };
   return <>
+  <div style={{overflowX:"hidden"}}>
   <NavBarNew/>
   <ForthScreen scrolled={scrolled}/>
   <FirstScreen />
@@ -45,6 +46,7 @@ function App() {
   <Services/>
   <ThirdScreen/>
   <ByMe/>
+  </div>
   </>
 }
 

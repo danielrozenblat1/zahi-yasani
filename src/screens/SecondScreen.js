@@ -16,7 +16,13 @@ const SecondScreen=()=>{
                 הדרך להצלחה מתחילה בצעדים קטנים, ואני כאן ללוות אותך בכל שלב
             </div>
             <div className={styles.description}>
-                לכן פיתחתי מגוון שירותים שיעזרו לך להתקדם בדרך שלך להצלחה
+במרחב שלי, נערות ונשים ימצאו סביבה בטוחה ומחזקת, שבהן יוכלו לחקור את חלומותיהן, להתמודד עם אתגרים ולפתח את היכולות הייחודיות שלהן.
+            </div>
+            <div className={styles.description}>
+            אני מזמינה אותך להצטרף אליי למסע של גילוי, צמיחה והעצמה. יחד, נבנה את הדרך לחיים מלאים, מספקים ומשמעותיים.
+            </div>
+            <div className={styles.description}>
+                פיתחתי מגוון שירותים שיעזרו לך להתקדם בדרך שלך להצלחה
             </div>
             <div className={styles.arrowContainer}>
         <ChevronDown className={styles.bounceArrow} size={40} color="#472e1b" />

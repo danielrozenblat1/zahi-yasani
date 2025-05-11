@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "./ForthScreen.module.css";
 import { ChevronDown } from 'lucide-react';
 import Loader from '../components/loader/Loader';
-
+import logo from "../images/צהיי יסני לוגו חדש.png"
 // Assuming you have these images imported
 import topLeftImage from "../images/צהיי הרצאה.png";
 import topRightImage from "../images/צהיי יסני תמונה ימין.jpeg";
@@ -13,7 +13,8 @@ const ForthScreen = (props) => {
   useEffect(() => {
     const imageUrls = [
       topLeftImage,
-      topRightImage
+      topRightImage,
+      logo
     ];
 
     const loadImage = (url) => {
@@ -58,20 +59,13 @@ const ForthScreen = (props) => {
   return (
     <div className={props.scrolled ? styles.containerP : styles.container}>
       <div className={styles.explainContainer}>
-        <div className={styles.imageContainer}>
-          <div className={styles.topLeftImage}></div>
-          <div className={styles.topRightImage}></div>
-        </div>
+  
         <div className={styles.explain}>
           הדרך לעבור שינויים אמיתיים שמגיעים מבפנים
         </div>
       </div>
-      <div className={styles.contentWrapper}>
-        <div className={styles.descriptionWrapper}>
-          <div className={styles.description}>צהיי יסני מציגה</div>
-          <div className={styles.description}>״לבחור לחיות את האדם שאתה חולם להיות״</div>
-        </div>
-      </div>
+      <img className={styles.image} src={logo}/>
+
       <div className={styles.arrowContainer}>
         <ChevronDown className={styles.bounceArrow} size={40} color="#472e1b" />
       </div>

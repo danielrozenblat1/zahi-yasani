@@ -43,10 +43,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(110, 82, 49, 0.3)3) 50%, 
-        transparent 100%);
+
 }
 
 @keyframes shimmer {

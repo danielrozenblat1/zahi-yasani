@@ -6,6 +6,8 @@ import Button from '../button/Button';
 // Personal Coaching Images
 import personalImage1 from "../../images/צהיי סדנאות קבוצתיות 1.jpeg";
 import personalImage2 from "../../images/צהיי סדנאות קבוצתיות 2.jpeg";
+import personalImage3 from "../../images/צהיי סדנאות תמונה נוספת.jpeg"
+import personalImage4 from "../../images/צהיי סדנאות תמונה נוספת 2.jpeg"
 // Resilience Workshop Images
 import resilienceImage1 from "../../images/צהיי סדנאות קבוצתיות 2.jpeg";
 import resilienceImage2 from "../../images/צהיי סדנאות קבוצתיות 1.jpeg";
@@ -13,11 +15,12 @@ import resilienceImage2 from "../../images/צהיי סדנאות קבוצתיו�
 // Family Coaching Images
 import familyImage1 from "../../videos/צהיי ערב משפחה.mp4";
 import familyImage2 from "../../images/צהי ערב משפחה 1.jpeg";
-
+import familyImage3 from "../../images/צהיי ליווי משפחתי 1.jpeg"
+import familyImage4 from "../../images/צהיי ליווי משפחתי 2.jpeg"
 // Lectures Images
 import lectureImage1 from "../../images/צהיי הרצאה.png";
-import lectureImage2 from "../../images/צהיי הרצאות 2.jpg";
-
+import lectureImage2 from "../../images/צהיי הרצאה.jpeg";
+import lectureImage3 from "../../images/צהיי הרצאה 3.jpeg"
 // Community Service Images
 import communityImage1 from "../../images/צהיי ערב חוסן 1.jpeg";
 import communityImage2 from "../../images/צהיי ערב חוסן.jpeg";
@@ -66,6 +69,9 @@ const CourseBox = ({ title, subtitle, sessions, message, images, icon }) => {
                 <div className={styles.meetingHeader}>
                   <h3 className={styles.meetingTitle}>{session.title}</h3>
                 </div>
+                {session.description && (
+                  <p className={styles.sessionDescription}>{session.description}</p>
+                )}
                 <ul className={styles.detailsList}>
                   {session.details.map((detail, idx) => (
                     <li key={idx} className={styles.detailItem}>
@@ -135,7 +141,7 @@ const Courses = () => {
     title: "סדנאות חוסן אישי וקהילתי",
     subtitle: "לרשויות, עמותות וארגוני הייטק",
     message: "היי, אשמח לשמוע עוד פרטים על סדנאות חוסן אישי וקהילתי",
-    images: [resilienceImage1, lectureImage2, resilienceImage2],
+    images: [resilienceImage1, lectureImage2, resilienceImage2,personalImage3,personalImage4],
     icon: resilienceIcon,
     sessions: [
       {
@@ -157,7 +163,7 @@ const Courses = () => {
     title: "אימון משפחתי - משפחה כן בוחרים",
     subtitle: " 8 מפגשים של שעה לחיזוק הדינמיקה המשפחתית",
     message: "היי, אשמח לשמוע עוד פרטים על אימון משפחתי",
-    images: [familyImage2],
+    images: [familyImage4,familyImage3,familyImage2,],
     icon: familyIcon,
     sessions: [
       {
@@ -175,13 +181,14 @@ const Courses = () => {
 
   const lectures = {
     title: "הרצאות",
-    subtitle: "2  הרצאות אינטראקטיביות הכוללות את הסיפור האישי שלי",
+    subtitle: "אני שמחה להזמין אתכן לשתי הרצאות מעשירות ומחזקות, שנועדו לסייע ולהעצים את הקהל בנושאים חשובים ומעוררי השראה.",
     message: "היי, אשמח לשמוע עוד פרטים על ההרצאות",
-    images: [lectureImage1, lectureImage2],
+    images: [lectureImage1, lectureImage2,lectureImage3],
     icon: lectureIcon,
     sessions: [
       {
         title: "1. המשפחה מתמודדת",
+        description: "בהרצאה זו נדון באתגרים שמביאה עמה מחלת נפש במשפחה, ונעניק כלים מעשיים להורים, אחים ובני משפחה אחרים. נלמד על דרכי התקשורת החשובות, איך לבקש עזרה, ואילו משאבים קיימים כדי לתמוך באדם הקרוב לנו. ההרצאה תספק לקהל הבנה מעמיקה ותחושת שייכות, וגם תציע אסטרטגיות להתמודד עם הקשיים.",
         details: [
           "הרצאה המבוססת על סיפור אישי (מתמודד נפש במשפחה)",
           "ההרצאה נותנת כלים להתמודדות משפחתית",
@@ -190,13 +197,14 @@ const Courses = () => {
         ]
       },
       {
-        title: '2 ."לחיות את האישה שאת חולמת להיות"',
+        title: '2 ."תבחרי לחיות את האישה שאת חולמת להיות"',
+        description: "בהרצאה זו נחקור את הנושא של העצמה אישית ונושא הייעוד. נלמד כיצד לזהות את החזון האישי שלנו, להגדיר מטרות ולהתמודד עם המכשולים בדרך. אני אשתף בכלים מעשיים שיסייעו לנשים לממש את הפוטנציאל שלהן ולחיות חיים מלאים ומשמעותיים יותר.",
         details: [
           "הרצאה משנת חיים על התפתחות אישית ומימוש עצמי",
           "בהרצאה כל אחת תקבל כלים לחיות את החלומות שלה ולא של אחרים",
           "משך ההרצאה שעה וחצי",
           "ההרצאה כוללת דיאלוג פתוח עם הקהל",
-            "מתאים במיוחד ליום האישה, לארגוני 'קידום מעמד האישה' , לארגוני נשים,לכנסים"
+          "מתאים במיוחד ליום האישה, לארגוני 'קידום מעמד האישה' , לארגוני נשים,לכנסים ופנימיות."
         ]
       }
     ]
@@ -216,7 +224,8 @@ const Courses = () => {
           "שיפור הדינמיקה בקהילה",
           "בניית תכנית פעולה קהילתית",
           "ליווי מותאם לצרכי הקהילה",
-          "שעות ייעוץ"
+          "שעות ייעוץ",
+          "מתאים במיוחד לחברות הייטק ולקבוצות שרוצות להחיות את הקהילתיות בין העובדים"
         ]
       }
     ]
@@ -224,7 +233,7 @@ const Courses = () => {
 
   return (
     <>
-      <div className={styles.title}  id="השירותים שלי">השירותים שלי</div>
+      <div className={styles.title} id="השירותים שלי">השירותים שלי</div>
       <div className={styles.description}>
         יש הרבה דרכים וצורות לגרום לשינוי! לחצו על כל שירות כדי לראות מה הוא מכיל, קצת ממה שקורה בו והבינו איך אתם מעדיפים לפגוש אותי
       </div>
