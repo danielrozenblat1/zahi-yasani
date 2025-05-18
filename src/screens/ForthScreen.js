@@ -61,7 +61,7 @@ const ForthScreen = (props) => {
       <div className={styles.explainContainer}>
   
         <div className={styles.explain}>
-          הדרך לעבור שינויים אמיתיים שמגיעים מבפנים
+        העתיד שלך מתחיל היום
         </div>
       </div>
       <img className={styles.image} src={logo}/>
