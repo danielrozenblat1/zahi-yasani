@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import Services from './components/recommends/Services';
 import SecondScreen from './screens/SecondScreen';
 import ForthScreen from './screens/ForthScreen';
+import PrivacyPolicy from './components/privacy/Privacy';
 
 function App() {
 
@@ -45,6 +46,12 @@ function App() {
   <Courses/>
   <Services/>
   <ThirdScreen/>
+  <PrivacyPolicy 
+  ownerName="צהיי יסני" 
+  email="ZahiY@rishonlezion.muni.il" 
+  phone="+972 54-908-1705" 
+  domain="https://zahiyasani.co.il/" 
+/>
   <ByMe/>
   </div>
   </>
